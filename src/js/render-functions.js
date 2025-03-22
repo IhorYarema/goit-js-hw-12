@@ -48,10 +48,12 @@ export function renderGallery(images, isNewQuery = false) {
 
 export function showLoader() {
   loader.classList.remove('hidden');
+  loadMoreBtn.classList.add('hidden');
 }
 
 export function hideLoader() {
   loader.classList.add('hidden');
+  loadMoreBtn.classList.remove('hidden');
 }
 
 export function showErrorMessage(message) {
